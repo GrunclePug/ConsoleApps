@@ -27,7 +27,9 @@ public class BotAI extends Board
     {
         minimax(bd, 0, true);
         if(legalMove(bestPos[0], bestPos[1]))
+        {
             board[bestPos[0]][bestPos[1]] = " O ";
+        }
     }
 
     /**
