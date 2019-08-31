@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Bot AI and Game Mechanics
+ * @author grunclepug
+ */
 public class BotAI extends Board
 {
     //Constants
@@ -15,6 +19,9 @@ public class BotAI extends Board
     private static String[][] board = bd.board;
     private static int[] bestPos; //Best position for the bot to play
 
+    /**
+     * The bots turn
+     */
     public static void botPlay()
     {
         minimax(bd, 0, true);
@@ -22,6 +29,13 @@ public class BotAI extends Board
             board[bestPos[0]][bestPos[1]] = " O ";
     }
 
+    /**
+     * Using minimax algorithm
+     * @param bd game board
+     * @param depth dont know how it works
+     * @param max dont know how it works
+     * @return best score
+     */
     public static int minimax(Board bd, int depth, boolean max)
     {
         int[][] possibleMoves = getPossibleMoves(bd);
@@ -112,6 +126,11 @@ public class BotAI extends Board
         }
     }
 
+    /**
+     * Gets possible moves
+     * @param bd game board
+     * @return returns possible moves
+     */
     public static int[][] getPossibleMoves(Board bd)
     {
         ArrayList<int[]> moves = new ArrayList<>();
@@ -136,11 +155,23 @@ public class BotAI extends Board
         return possibleMoves;
     }
 
+    /**
+     * Determines if the move is allowed
+     * @param x x coord
+     * @param y y coord
+     * @return is the move allowed
+     */
     public static boolean legalMove(int x, int y)
     {
         return !board[x][y].equals(" X ") && !board[x][y].equals(" O ");
     }
 
+    /**
+     * Determines if game has to update the game board
+     * @param x x coord
+     * @param y y coord
+     * @return does the board have to update
+     */
     public static boolean updateBoard(int x, int y)
     {
         if(legalMove(x, y))
@@ -154,6 +185,9 @@ public class BotAI extends Board
         }
     }
 
+    /**
+     * The players turn
+     */
     public static void userPlay()
     {
         try
@@ -174,6 +208,11 @@ public class BotAI extends Board
         return;
     }
 
+    /**
+     * The players choice
+     * @param x x coord they chose
+     * @param y y coord they chose
+     */
     public static void userAction(int x, int y)
     {
         while(!updateBoard(x, y))
@@ -184,6 +223,11 @@ public class BotAI extends Board
         }
     }
 
+    /**
+     * Determines if the bot wins the game
+     * @param board game board
+     * @return does the bot win
+     */
     public static boolean botWin(String[][] board)
     {
         for(int i = 0; i < MAX_BOARD_INDEX; i += 2) //Checking horizontals and verticals
@@ -220,6 +264,11 @@ public class BotAI extends Board
         return false;
     }
 
+    /**
+     * Determines if the player wins the game
+     * @param board game board
+     * @return does the player win
+     */
     public static boolean userWin(String[][] board)
     {
         for(int i = 0; i < MAX_BOARD_INDEX; i += 2) //Checking horizontals and verticals
@@ -256,6 +305,11 @@ public class BotAI extends Board
         return false;
     }
 
+    /**
+     * Determines if it's a tie game
+     * @param board game board
+     * @return is it a tie
+     */
     public static boolean tie(String[][] board)
     {
         for(int i = 0; i < MAX_BOARD_INDEX; i += 2)
@@ -271,6 +325,10 @@ public class BotAI extends Board
         return true;
     }
 
+    /**
+     * Main method
+     * @param args user input
+     */
     public static void main(String[] args)
     {
         System.out.println("Welcome to Tic Tac Toe.\nEnter your move with X, Y coordinates seperated by a space\n");
