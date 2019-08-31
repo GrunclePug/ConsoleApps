@@ -7,6 +7,7 @@ import java.util.Scanner;
 /**
  * Bot AI and Game Mechanics
  * @author grunclepug
+ * @version 1.0
  */
 public class BotAI extends Board
 {

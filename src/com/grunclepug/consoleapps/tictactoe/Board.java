@@ -3,6 +3,7 @@ package com.grunclepug.consoleapps.tictactoe;
 /**
  * Board for Tic Tac Toe game
  * @author grunclepug
+ * @version 1.0
  */
 public class Board
 {
