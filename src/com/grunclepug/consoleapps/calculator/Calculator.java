@@ -2,11 +2,20 @@ package com.grunclepug.consoleapps.calculator;
 
 import java.util.Scanner;
 
+/**
+ * Java Calculator
+ * @author grunclepug
+ * @version 1.0
+ */
 public class Calculator
 {
     //Variables
     private static Scanner sc = new Scanner(System.in);
 
+    /**
+     * Main method
+     * @param args input from console
+     */
     public static void main(String[] args)
     {
         int number1;
@@ -33,6 +42,13 @@ public class Calculator
         }
     }
 
+    /**
+     * Calculate Method
+     * @param num1 first number
+     * @param num2 second number
+     * @param op operation to use
+     * @return the answer
+     */
     private static int calculate(int num1, int num2, String op)
     {
         int answer = 0;
