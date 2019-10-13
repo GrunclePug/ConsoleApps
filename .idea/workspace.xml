@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a986ab0f-33a1-4bc2-8c20-a27f8f9b6610" name="Default Changelist" comment="" />
+    <list default="true" id="a986ab0f-33a1-4bc2-8c20-a27f8f9b6610" name="Default Changelist" comment="Made the code prettier">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/grunclepug/consoleapps/minimax/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/grunclepug/consoleapps/minimax/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/grunclepug/consoleapps/minimax/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/grunclepug/consoleapps/testing/minimax/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/grunclepug/consoleapps/testing/minimax/UniqueSequentialNumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +31,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/grunclepug/consoleapps/guessthenumber" />
-    <property name="settings.editor.selected.configurable" value="discord-application" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -42,13 +50,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Calculator">
-    <configuration name="BotAI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.grunclepug.consoleapps.tictactoe.BotAI" />
+  <component name="RunManager" selected="Application.Driver (2)">
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.grunclepug.consoleapps.calculator.Calculator" />
       <module name="ConsoleApps" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.grunclepug.consoleapps.tictactoe.*" />
+          <option name="PATTERN" value="com.grunclepug.consoleapps.calculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -56,12 +64,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.grunclepug.consoleapps.calculator.Calculator" />
+    <configuration name="Driver (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.grunclepug.consoleapps.testing.luca.Driver" />
       <module name="ConsoleApps" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.grunclepug.consoleapps.calculator.*" />
+          <option name="PATTERN" value="com.grunclepug.consoleapps.testing.luca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Driver (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.grunclepug.consoleapps.testing.minimax.Driver" />
+      <module name="ConsoleApps" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.grunclepug.consoleapps.testing.minimax.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.grunclepug.consoleapps.minimax.Driver" />
+      <module name="ConsoleApps" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.grunclepug.consoleapps.minimax.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.grunclepug.consoleapps.testing.minimax.Driver" />
+      <module name="ConsoleApps" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.grunclepug.consoleapps.testing.minimax.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,9 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Driver (2)" />
+        <item itemvalue="Application.Driver" />
+        <item itemvalue="Application.Driver (1)" />
+        <item itemvalue="Application.Driver (1)" />
         <item itemvalue="Application.Calculator" />
-        <item itemvalue="Application.BotAI" />
-        <item itemvalue="Application.GuessNumber" />
       </list>
     </recent_temporary>
   </component>
